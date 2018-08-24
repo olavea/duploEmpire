@@ -1,1 +1,32 @@
-function 
+// First colors "blue", "red", "green", "yellow"
+
+const duploTower = [
+  { color: "blue", size: 4 },
+  { color: "red", size: 4 },
+  { color: "blue", size: 8 },
+  { color: "yellow", size: 4 },
+  { color: "green", size: 4 }
+];
+
+const BlueAndRedAndGreenAndYellowList = ["blue", "red", "green", "yellow"];
+
+function includeWhitelist(duplo) {
+  return BlueAndRedAndGreenAndYellowList.includes(duplo.color);
+}
+
+function generateDuploSet(duploTower) {
+  return duploTower.filter(includeWhitelist);
+}
+
+generateDuploSet(duploTower);
+
+console.log("generateDuploSet()");
+
+
+// No intended identification with actual persons
+// (living or deceased). No animals harmed.
+// No product placements. Coffee is good for your brain.
+
+// feelGood
+// dev.Doodles
+// Two Pirate Princesses in Distress
